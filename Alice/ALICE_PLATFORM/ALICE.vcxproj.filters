@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\userSrc\sketch_helloWorld\sketch_helloWorld.cpp" />
+    <ClCompile Include="src\userSrc\sketch_pds\sketch_empty.cpp" />
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_0_3_gaussianDistribution.cpp">
+      <Filter>Daniel_Shiffman\0_INTRODUCTION</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_0_4_customDistribution.cpp">
+      <Filter>Daniel_Shiffman\0_INTRODUCTION</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_0_5_perlinNoise.cpp">
+      <Filter>Daniel_Shiffman\0_INTRODUCTION</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_1_2_vectors.cpp">
+      <Filter>Daniel_Shiffman\1_VECTORS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_1_3_vectorMath.cpp">
+      <Filter>Daniel_Shiffman\1_VECTORS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_1_4_vectorMath2.cpp">
+      <Filter>Daniel_Shiffman\1_VECTORS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_1_5_acceleration.cpp">
+      <Filter>Daniel_Shiffman\1_VECTORS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_1_6_vectors.cpp">
+      <Filter>Daniel_Shiffman\1_VECTORS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_2_1_force.cpp">
+      <Filter>Daniel_Shiffman\2_FORCES</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_2_2_applyingForce.cpp">
+      <Filter>Daniel_Shiffman\2_FORCES</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_2_3_mass.cpp">
+      <Filter>Daniel_Shiffman\2_FORCES</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_2_4_frictionForce.cpp">
+      <Filter>Daniel_Shiffman\2_FORCES</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_2_5_dragForce.cpp">
+      <Filter>Daniel_Shiffman\2_FORCES</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_2_6_gravitationalAttraction.cpp">
+      <Filter>Daniel_Shiffman\2_FORCES</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_1_0_angularMotion.cpp">
+      <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_1_1_angularMotion.cpp">
+      <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_2_trigonometry_and_polar_coordinates.cpp">
+      <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Daniel_Shiffman">
+      <UniqueIdentifier>{e4ddbbda-99d2-43aa-b980-277ef2b6c4cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Daniel_Shiffman\0_INTRODUCTION">
+      <UniqueIdentifier>{c49a7e4e-09e3-483c-ae91-9c74595daf30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Daniel_Shiffman\1_VECTORS">
+      <UniqueIdentifier>{c28e0442-e77b-44a3-818f-42324d31c2ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Daniel_Shiffman\2_FORCES">
+      <UniqueIdentifier>{0b85b897-7b58-4f59-807f-698b95be8062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Daniel_Shiffman\3_OSCILLATION">
+      <UniqueIdentifier>{791f29c3-d205-4b7c-82f4-7a7f5a5c5be0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\userSrc\sketch_pds\Daniel_Shiffman\Mover_rectangle.h">
+      <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
+    </ClInclude>
+    <ClInclude Include="src\userSrc\sketch_pds\Daniel_Shiffman\Attractor.h">
+      <Filter>Daniel_Shiffman\2_FORCES</Filter>
+    </ClInclude>
+    <ClInclude Include="src\userSrc\sketch_pds\Daniel_Shiffman\Mover.h">
+      <Filter>Daniel_Shiffman\2_FORCES</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
