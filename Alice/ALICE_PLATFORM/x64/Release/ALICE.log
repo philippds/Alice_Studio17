@@ -1,4 +1,0 @@
-﻿  sketch_empty.cpp
-src\userSrc\sketch_empty.cpp(115): error C3867: 'Alice::vec::normalise': non-standard syntax; use '&' to create a pointer to member
-src\userSrc\sketch_empty.cpp(116): error C3867: 'Alice::vec::normalise': non-standard syntax; use '&' to create a pointer to member
-src\userSrc\sketch_empty.cpp(117): error C3867: 'Alice::vec::normalise': non-standard syntax; use '&' to create a pointer to member
