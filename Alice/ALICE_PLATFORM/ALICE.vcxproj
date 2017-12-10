@@ -206,7 +206,7 @@
     <IntDir>$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>C:\Users\pdsie\Documents\dev\projects\github\Alice_Studio17\Alice\ALICE_PLATFORM\x64\Release\EXE\</OutDir>
+    <OutDir>$(ProjectDir)\x64\Release\EXE\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <GenerateManifest>true</GenerateManifest>
     <EmbedManifest>true</EmbedManifest>
