@@ -16,20 +16,19 @@ public:
 	vec dragOffset;
 	float size;
 
-	Attractor(vec location)
-		:location(location)
+	Attractor(vec location, float size)
+		:location(location), size(size)
 	{
 		mass = 20;
 		G = 1;
 		dragOffset = vec(0, 0, 0);
-		size = 10;
 	}
 	Attractor()	{
 		location = vec(0, 0, 0);
 		mass = 20;
 		G = 1;
 		dragOffset = vec(0, 0, 0);
-		size = 10;
+		size = 5;
 	}
 
 	vec attract(Mover _m) {

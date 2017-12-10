@@ -19,13 +19,12 @@ public:
 		location = vec(ofRandom(-10.00,10.00), ofRandom(-10.00, 10.00), 0);
 		velocity = vec(0, 0, 0);
 		acceleration = vec(0, 0, 0);
-		mass = ofRandom(1, 10);
+		mass = ofRandom(1, 5);
 		size = mass;
 	}
 
 	void applyForce(vec _force) {
 		vec f = _force / mass;
-		
 		acceleration += f;
 	}
 

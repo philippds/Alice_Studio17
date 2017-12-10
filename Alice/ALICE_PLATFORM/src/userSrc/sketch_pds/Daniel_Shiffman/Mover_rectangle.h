@@ -5,8 +5,6 @@
 
 #include "main.h"
 
-
-
 void rotate_vec(vec& origin, vec& vector, double angle)
 {
 	vec resulting_vec = vector - origin;
@@ -26,7 +24,7 @@ public:
 
 	}
 	my_Polygon()
-		:a(vec(-10, -10, 0)), b(10,-10,0), c(10,10,0), d(-10,10,0), e(0,0,0)
+		:a(vec(-5, -5, 0)), b(5,-5,0), c(5,5,0), d(-5,5,0), e(0,0,0)
 	{
 
 	}

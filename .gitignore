@@ -8,6 +8,10 @@
 *.sln.docstates
 *.vcxproj
 *.vcxproj.filters
+*.command.1.tlog
+*.write.1.tlog
+
+
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

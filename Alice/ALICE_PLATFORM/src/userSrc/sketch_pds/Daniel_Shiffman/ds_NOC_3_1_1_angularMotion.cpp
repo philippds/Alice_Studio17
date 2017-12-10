@@ -12,9 +12,9 @@
 
 Mover m[5];
 
-Attractor a(vec(0, 100, 0));
-Attractor b(vec(100, -100, 0));
-Attractor c(vec(-100, -100, 0));
+Attractor a(vec(0, 100, 0), 3);
+Attractor b(vec(100, -100, 0), 3);
+Attractor c(vec(-100, -100, 0), 3);
 
 vec gravity(0, -0.1, 0);
 vec wind(0.05, 0, 0);
@@ -56,9 +56,6 @@ void update(int value)
 		applyForces(m[i]);
 		m[i].update();
 	}
-
-	//m.edges();
-
 }
 
 

@@ -12,9 +12,11 @@
 
 Mover m[5];
 
-Attractor a(vec(0,10,0));
-Attractor b(vec(10, -15, 0));
-Attractor c(vec(-15, -15, 0));
+float attractor_size = 3;
+
+Attractor a(vec(0,10,0), attractor_size);
+Attractor b(vec(10, -15, 0), attractor_size);
+Attractor c(vec(-15, -15, 0), attractor_size);
 
 vec gravity(0, -0.1, 0);
 vec wind(0.05, 0, 0);
