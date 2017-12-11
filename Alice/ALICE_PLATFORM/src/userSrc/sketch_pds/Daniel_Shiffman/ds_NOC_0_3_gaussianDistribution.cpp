@@ -2,13 +2,6 @@
 #ifdef _MAIN_
 
 #include "main.h"
-#include "MODEL.h"
-#include <array>
-#include <memory>
-#include <time.h>
-#include <experimental/generator>
-///
-#include <iostream>
 #include <random>
 
 ///////// ----------------------------------------- model - view - controller (MVC) paradigm / pattern / template  ----------------- ////////////////////////////// 
@@ -19,8 +12,7 @@ double number;
 vector<double> genNum;
 
 default_random_engine generator;
-//normal_distribution<> distr(mean, stdev); 
-normal_distribution<double> distribution(0, 10);
+normal_distribution<double> distribution(0, 50);
 
 void setup()
 {
@@ -40,21 +32,14 @@ void update(int value)
 void draw()
 {
 	glPointSize(10);
-	glColor3f(1, 0, 0);
-
-
+	glColor3f(0, 0, 1);
 	drawPoint(pos);
 
-	/*
-	for (int i = 0; i < genNum.size(); i++) {
-		pos.x = genNum[i];
-		drawPoint(pos);
-	}
-	*/
-
-	glColor3f(1, 1, 1);
-	backGround(0.75);
-	drawGrid(20);
+	// background + grid
+	glLineWidth(1);
+	backGround(1);
+	glColor3d(0.75, 0.75, 0.75);
+	drawGrid(100);
 }
 
 /////////////////////////// control  ///////////////////////////////////////////

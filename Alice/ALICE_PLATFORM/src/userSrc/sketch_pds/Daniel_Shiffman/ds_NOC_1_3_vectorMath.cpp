@@ -7,7 +7,6 @@
 ///////// ----------------------------------------- model - view - controller (MVC) paradigm / pattern / template  ----------------- ////////////////////////////// 
 /////////////////////////// model  ///////////////////////////////////////////
 
-
 vec location = vec(100, 100, 0);
 
 class Ball {
@@ -27,17 +26,17 @@ public:
 	}
 
 	void bounce() {
-		if (location.x > 20 || location.x < -20) {
+		if (location.x > 100 || location.x < -100) {
 			velocity.x *= -1;
 		}
-		if (location.y > 20 || location.y < -20) {
+		if (location.y > 100 || location.y < -100) {
 			velocity.y *= -1;
 		}
 	}
 
 	void display(float size) {
 		glPointSize(size);
-		glColor3f(1, 0, 0);
+		glColor3f(0, 0, 1);
 		drawPoint(location);
 	}
 };
@@ -46,7 +45,7 @@ Ball myBall;
 
 void setup()
 {
-	myBall.velocity *= 0.1;
+	myBall.velocity *= 0.8;
 }
 
 void update(int value)
@@ -55,17 +54,20 @@ void update(int value)
 	myBall.bounce();
 }
 
-
 /////////////////////////// view  ///////////////////////////////////////////
 
 void draw()
 {
-	myBall.display(5);
-	drawLine((myBall.location / myBall.location.mag()) * 10, vec(0,0,0));
+	myBall.display(10);
+	glLineWidth(3);
+	glColor3d(0, 1, 1);
+	drawLine((myBall.location / myBall.location.mag()) * 20, vec(0,0,0));
 
-	glColor3f(1, 1, 1);
-	backGround(0.75);
-	drawGrid(20);
+	// background + grid
+	glLineWidth(1);
+	backGround(1);
+	glColor3d(0.75, 0.75, 0.75);
+	drawGrid(100);
 }
 
 /////////////////////////// control  ///////////////////////////////////////////
