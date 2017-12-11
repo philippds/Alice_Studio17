@@ -52,7 +52,7 @@
     </ClCompile>
     <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_1_3_vectorMath.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_igl|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_1_4_vectorMath2.cpp">
@@ -110,7 +110,9 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_igl|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_2_trigonometry_and_polar_coordinates.cpp" />
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_2_trigonometry_and_polar_coordinates.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="src\userSrc\sketch_pds\sketch_empty.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>

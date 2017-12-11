@@ -2,20 +2,13 @@
 #ifdef _MAIN_
 
 #include "main.h"
-//#include "MODEL.h"
-//#include <array>
-//#include <memory>
-//#include <time.h>
-//#include <experimental/generator>
-///
-//#include <iostream>
 #include <random>
 
 ///////// ----------------------------------------- model - view - controller (MVC) paradigm / pattern / template  ----------------- ////////////////////////////// 
 /////////////////////////// model  ///////////////////////////////////////////
 
-const int valsSize = 200;
-const int width = 20;
+const int valsSize = 2000;
+const int width = 100;
 float vals[valsSize];
 
 float montecarlo() {
@@ -51,11 +44,16 @@ void update(int value)
 
 void draw()
 {
+	glColor3d(0, 0, 1);
 	for (float i = 0; i < valsSize; i++) {
 		drawLine(vec(i, 0, 0), vec(i, vals[int(i)], 0));
 	}
-	backGround(0.75);
-	drawGrid(20);
+
+	// background + grid
+	glLineWidth(1);
+	backGround(1);
+	glColor3d(0.75, 0.75, 0.75);
+	drawGrid(100);
 }
 
 /////////////////////////// control  ///////////////////////////////////////////
