@@ -5,8 +5,6 @@
 #include "Mover.h"
 #include "Attractor.h"
 
-//#include <random>
-
 ///////// ----------------------------------------- model - view - controller (MVC) paradigm / pattern / template  ----------------- ////////////////////////////// 
 /////////////////////////// model  ///////////////////////////////////////////
 
@@ -61,7 +59,6 @@ void update(int value)
 	}
 
 	//m.edges();
-
 }
 
 
@@ -78,9 +75,11 @@ void draw()
 	b.display();
 	c.display();
 
-	glColor3f(1, 1, 1);
-	backGround(0.75);
-	drawGrid(20);
+	// background + grid
+	glLineWidth(1);
+	backGround(1);
+	glColor3d(0.75, 0.75, 0.75);
+	drawGrid(100);
 }
 
 /////////////////////////// control  ///////////////////////////////////////////

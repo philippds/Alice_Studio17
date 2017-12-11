@@ -20,10 +20,7 @@ class my_Polygon
 {
 public:
 	my_Polygon(vec& a, vec& b, vec& c, vec& d)
-		:a(a), b(b), c(c), d(d)
-	{
-
-	}
+		:a(a), b(b), c(c), d(d) {}
 
 	void draw();
 	void rotate(vec c, double angle);
@@ -80,10 +77,11 @@ void draw()
 {	
 	pg.draw();
 
+	// background + grid
 	glLineWidth(1);
-	glColor3f(1, 1, 1);
-	backGround(0.75);
-	drawGrid(20);
+	backGround(1);
+	glColor3d(0.75, 0.75, 0.75);
+	drawGrid(100);
 }
 
 /////////////////////////// control  ///////////////////////////////////////////

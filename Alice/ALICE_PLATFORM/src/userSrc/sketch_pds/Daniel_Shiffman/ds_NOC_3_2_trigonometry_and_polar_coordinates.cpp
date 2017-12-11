@@ -39,13 +39,12 @@ void draw()
 	glLineWidth(3);
 	drawLine(vec(0, 0, 0), vec(x, y, 0));
 	drawCircle(vec(x, y, 0),10,100);
-
-
+	
 	// background + grid
 	glLineWidth(1);
 	backGround(1);
-	glColor3d(0.75,0.75,0.75);
-	drawGrid(20);
+	glColor3d(0.75, 0.75, 0.75);
+	drawGrid(100);
 }
 
 /////////////////////////// control  ///////////////////////////////////////////

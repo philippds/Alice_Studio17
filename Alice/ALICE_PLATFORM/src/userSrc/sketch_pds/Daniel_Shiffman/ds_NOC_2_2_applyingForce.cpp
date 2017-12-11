@@ -2,7 +2,6 @@
 #ifdef _MAIN_
 
 #include "main.h"
-//#include <random>
 
 ///////// ----------------------------------------- model - view - controller (MVC) paradigm / pattern / template  ----------------- ////////////////////////////// 
 /////////////////////////// model  ///////////////////////////////////////////
@@ -72,9 +71,11 @@ void draw()
 {
 	m.display(5);
 
-	glColor3f(1, 1, 1);
-	backGround(0.75);
-	drawGrid(20);
+	// background + grid
+	glLineWidth(1);
+	backGround(1);
+	glColor3d(0.75, 0.75, 0.75);
+	drawGrid(100);
 }
 
 /////////////////////////// control  ///////////////////////////////////////////
