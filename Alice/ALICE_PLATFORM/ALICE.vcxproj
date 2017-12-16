@@ -28,6 +28,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ds_NOC_3_3_simple_harmonic_motion.cpp" />
+    <ClCompile Include="ds_NOC_3_4_pendulum_simulation.cpp" />
     <ClCompile Include="src\userSrc\sketch_helloWorld\sketch_helloWorld.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
