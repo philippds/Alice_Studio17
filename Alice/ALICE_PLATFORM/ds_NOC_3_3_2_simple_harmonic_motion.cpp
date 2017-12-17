@@ -45,12 +45,10 @@ void harmonic_pendulum::draw()
 	drawCircle(vec(x, y, 0), 10, 100);
 }
 
-
 harmonic_pendulum hp[5];
 
 void setup()
 {
-
 }
 
 void update(int value)
