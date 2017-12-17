@@ -27,22 +27,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ds_NOC_3_3_1_simple_harmonic_motion.cpp" />
-    <ClCompile Include="ds_NOC_3_3_0_simple_harmonic_motion.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_igl|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ds_NOC_3_4_pendulum_simulation.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_igl|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ds_NOC_3_5_springs.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_igl|x64'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="ds_NOC_3_3_2_simple_harmonic_motion.cpp" />
     <ClCompile Include="src\userSrc\sketch_helloWorld\sketch_helloWorld.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -129,6 +114,26 @@
     <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_2_trigonometry_and_polar_coordinates.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_igl|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_3_0_simple_harmonic_motion.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_igl|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_3_1_simple_harmonic_motion.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_igl|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_4_pendulum_simulation.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_igl|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_5_springs.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_igl|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="src\userSrc\sketch_pds\sketch_empty.cpp">

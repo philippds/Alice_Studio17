@@ -54,16 +54,19 @@
     <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_2_trigonometry_and_polar_coordinates.cpp">
       <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
     </ClCompile>
-    <ClCompile Include="ds_NOC_3_4_pendulum_simulation.cpp">
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_3_0_simple_harmonic_motion.cpp">
       <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
     </ClCompile>
-    <ClCompile Include="ds_NOC_3_5_springs.cpp">
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_3_1_simple_harmonic_motion.cpp">
       <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
     </ClCompile>
-    <ClCompile Include="ds_NOC_3_3_1_simple_harmonic_motion.cpp">
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_4_pendulum_simulation.cpp">
       <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
     </ClCompile>
-    <ClCompile Include="ds_NOC_3_3_0_simple_harmonic_motion.cpp">
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_5_springs.cpp">
+      <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
+    </ClCompile>
+    <ClCompile Include="ds_NOC_3_3_2_simple_harmonic_motion.cpp">
       <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
     </ClCompile>
   </ItemGroup>
