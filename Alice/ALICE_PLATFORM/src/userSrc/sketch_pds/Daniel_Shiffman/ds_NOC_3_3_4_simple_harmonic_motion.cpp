@@ -6,20 +6,26 @@
 ///////// ----------------------------------------- model - view - controller (MVC) paradigm / pattern / template  ----------------- ////////////////////////////// 
 /////////////////////////// model  ///////////////////////////////////////////
 
-#define max_waves 20
+#define x_spacing 8
+#define max_waves 5
 
-float theta = 0.0;
+#define w 200
+#define y_values_size (w / x_spacing)
+
+float y_values[y_values_size];
+float theta;
 float amplitude[max_waves];
 float dx[max_waves];
-float yvalues[max_waves];
 
 void setup()
 {
+	theta = 0.0;
+
 	for (int i = 0; i < max_waves; i++)
 	{
-		amplitude[i] = ofRandom(1, 10);
-		float period = ofRandom(100, 300);
-		dx[i] = (TWO_PI / period) * 10;
+		amplitude[i] = ofRandom(-50, 50);
+		float period = ofRandom(0,300);
+		dx[i] = (TWO_PI / period) * x_spacing;
 	}
 }
 
@@ -27,25 +33,25 @@ void update(int value)
 {
 	theta += 0.02;
 
-	for (int i = 0; i < max_waves; i++)
+	for (int i = 0; i < y_values_size; i++)
 	{
-		yvalues[i] = 0.0;
+		y_values[i] = 0.0;
 	}
 
-	for (int i = 0; i < max_waves; i++)
+	for (int j = 0; j < max_waves; j++)
 	{
 		float x = theta;
-		for (int j = 0; j < max_waves; j++)
+		for (int i = 0; i < y_values_size; i++)
 		{
-			if (i % 2 == 0)
+			if (j % 2 == 0)
 			{
-				yvalues[j] += sin(x) * amplitude[i];
+				y_values[i] += sin(x) * amplitude[j];
 			}
 			else
 			{
-				yvalues[j] += cos(x) * amplitude[i];
+				y_values[i] += cos(x) * amplitude[j];
 			}
-			x += dx[i];
+			x += dx[j];
 		}
 	}
 }
@@ -54,11 +60,11 @@ void update(int value)
 
 void draw()
 {
-	for (int i = 0; i < max_waves; i++)
+	for (int i = 0; i < y_values_size; i++)
 	{
 		glColor3d(0, 0, 0);
 		glLineWidth(3);
-		drawCircle(vec(i * 5, yvalues[i], 0), 10, 100);
+		drawCircle(vec(i * x_spacing - 100, y_values[i], 0), 10, 100);
 	}
 
 	// background + grid
