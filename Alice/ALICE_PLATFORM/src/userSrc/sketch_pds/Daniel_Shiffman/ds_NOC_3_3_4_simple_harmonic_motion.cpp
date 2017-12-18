@@ -6,56 +6,47 @@
 ///////// ----------------------------------------- model - view - controller (MVC) paradigm / pattern / template  ----------------- ////////////////////////////// 
 /////////////////////////// model  ///////////////////////////////////////////
 
-class harmonic_pendulum
-{
-public:
-	harmonic_pendulum();
+#define max_waves 20
 
-	void update();
-	void draw();
-
-	int x;
-	float angle;
-
-private:	
-	float y;
-	float amplitude;
-};
-
-harmonic_pendulum::harmonic_pendulum()
-{
-	amplitude = 100;
-}
-
-void harmonic_pendulum::update()
-{
-	y = sin(angle) * amplitude;
-	angle += 0.01;
-}
-
-void harmonic_pendulum::draw()
-{
-	glColor3d(0, 0, 0);
-	glLineWidth(3);
-	drawCircle(vec(x, y, 0), 10, 100);
-}
-
-harmonic_pendulum hp[20];
+float theta = 0.0;
+float amplitude[max_waves];
+float dx[max_waves];
+float yvalues[max_waves];
 
 void setup()
 {
-	for (int i = -10; i < 10; i++)
+	for (int i = 0; i < max_waves; i++)
 	{
-		hp[i + 10].x = i * 10;
-		hp[i + 10].angle = (i + 10) * 0.15;
+		amplitude[i] = ofRandom(1, 10);
+		float period = ofRandom(100, 300);
+		dx[i] = (TWO_PI / period) * 10;
 	}
 }
 
 void update(int value)
 {
-	for (int i = 0; i < 20; i++)
+	theta += 0.02;
+
+	for (int i = 0; i < max_waves; i++)
 	{
-		hp[i].update();
+		yvalues[i] = 0.0;
+	}
+
+	for (int i = 0; i < max_waves; i++)
+	{
+		float x = theta;
+		for (int j = 0; j < max_waves; j++)
+		{
+			if (i % 2 == 0)
+			{
+				yvalues[j] += sin(x) * amplitude[i];
+			}
+			else
+			{
+				yvalues[j] += cos(x) * amplitude[i];
+			}
+			x += dx[i];
+		}
 	}
 }
 
@@ -63,9 +54,11 @@ void update(int value)
 
 void draw()
 {
-	for (int i = 0; i < 20; i++)
+	for (int i = 0; i < max_waves; i++)
 	{
-		hp[i].draw();
+		glColor3d(0, 0, 0);
+		glLineWidth(3);
+		drawCircle(vec(i * 5, yvalues[i], 0), 10, 100);
 	}
 
 	// background + grid
