@@ -66,13 +66,16 @@
     <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_5_springs.cpp">
       <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
     </ClCompile>
-    <ClCompile Include="ds_NOC_3_3_2_simple_harmonic_motion.cpp">
-      <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
-    </ClCompile>
     <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_3_3_simple_harmonic_motion.cpp">
       <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
     </ClCompile>
     <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_3_4_simple_harmonic_motion.cpp">
+      <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_3_2_simple_harmonic_motion.cpp">
+      <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
+    </ClCompile>
+    <ClCompile Include="src\userSrc\sketch_pds\Daniel_Shiffman\ds_NOC_3_3_5_simple_harmonic_motion.cpp">
       <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
     </ClCompile>
   </ItemGroup>
@@ -91,6 +94,9 @@
     </Filter>
     <Filter Include="Daniel_Shiffman\3_OSCILLATION">
       <UniqueIdentifier>{791f29c3-d205-4b7c-82f4-7a7f5a5c5be0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Daniel_Shiffman\Classes">
+      <UniqueIdentifier>{6b884d49-0d97-44dc-9b9f-3141bee1231b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
