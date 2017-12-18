@@ -2,45 +2,40 @@
 #ifdef _MAIN_
 
 #include "main.h"
-#include "Mover.h"
-#include "Attractor.h"
+#include "Mover_bug.h"
+#include "Attractor_bug.h"
 
 ///////// ----------------------------------------- model - view - controller (MVC) paradigm / pattern / template  ----------------- ////////////////////////////// 
 /////////////////////////// model  ///////////////////////////////////////////
 
-Mover m[5];
+Mover_bug m[5];
 
-float attractor_size = 3;
+float attractor_size = 10;
 
-Attractor a(vec(0, 10, 0), attractor_size);
-Attractor b(vec(10, -15, 0), attractor_size);
-Attractor c(vec(-15, -15, 0), attractor_size);
+Attractor_bug a(vec(0, 0, 0), attractor_size);
 
-vec gravity(0, -0.1, 0);
-vec wind(0.05, 0, 0);
+vec gravity(0, -0.01, 0);
+vec wind(0.005, 0, 0);
 
 ostream & operator<<(ostream & os, vec & v) {
 	os << "(" << v.x << ", " << v.y << ", " << v.z << ")";
 	return os;
 }
 
-void applyGravity(Mover& _m) {
+void applyGravity(Mover_bug& _m) {
 	_m.applyForce(gravity);
 }
 
-void applyWind(Mover& _m) {
+void applyWind(Mover_bug& _m) {
 	_m.applyForce(wind);
 }
 
-void applyAttraction(Mover& _m) {
+void applyAttraction(Mover_bug& _m) {
 	vec force = a.attract(_m);
-	force += b.attract(_m);
-	force += c.attract(_m);
 	_m.applyForce(force);
-
 }
 
-void applyForces(Mover& _m) {
+void applyForces(Mover_bug& _m) {
 	applyGravity(_m);
 	applyWind(_m);
 	applyAttraction(_m);
@@ -58,7 +53,7 @@ void update(int value)
 		m[i].update();
 	}
 
-	//m.edges();
+	// m.edges();
 }
 
 
@@ -67,13 +62,11 @@ void update(int value)
 void draw()
 {
 
-	for (Mover n : m) {
+	for (Mover_bug n : m) {
 		n.display();
 	}
 
 	a.display();
-	b.display();
-	c.display();
 
 	// background + grid
 	glLineWidth(1);

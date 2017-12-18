@@ -109,5 +109,11 @@
     <ClInclude Include="src\userSrc\sketch_pds\Daniel_Shiffman\Mover.h">
       <Filter>Daniel_Shiffman\2_FORCES</Filter>
     </ClInclude>
+    <ClInclude Include="src\userSrc\sketch_pds\Daniel_Shiffman\Mover_bug.h">
+      <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
+    </ClInclude>
+    <ClInclude Include="src\userSrc\sketch_pds\Daniel_Shiffman\Attractor_bug.h">
+      <Filter>Daniel_Shiffman\3_OSCILLATION</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

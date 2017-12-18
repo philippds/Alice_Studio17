@@ -1,12 +1,12 @@
 #pragma once
-#ifndef MOVER
-#define MOVER
+#ifndef MOVER_BUG
+#define MOVER_BUG
 
 #include "main.h"
 
 //// CLASS MOVER
 
-class Mover
+class Mover_bug
 {
 public:
 	vec location;
@@ -15,8 +15,8 @@ public:
 	float mass;
 	float size;
 
-	Mover() {
-		location = vec(ofRandom(-100.0,100.0), ofRandom(-100.0, 100.0), 0);
+	Mover_bug() {
+		location = vec(ofRandom(-100.0, 100.0), ofRandom(-100.0, 100.0), 0);
 		velocity = vec(0, 0, 0);
 		acceleration = vec(0, 0, 0);
 		mass = ofRandom(2, 10);
@@ -25,7 +25,7 @@ public:
 
 	void applyForce(vec _force) {
 		vec f = _force / mass;
-		acceleration += f;
+		acceleration += f * 0.01;
 	}
 
 	void update() {
@@ -39,7 +39,7 @@ public:
 			location.x = 100;
 			velocity.x *= -1;
 		}
-		else if(location.x < -100){
+		else if (location.x < -100) {
 			location.x = -100;
 			velocity.x *= -1;
 		}
@@ -60,7 +60,7 @@ public:
 		drawPoint(location);
 	}
 	//destructor
-	~Mover() {};
+	~Mover_bug() {};
 };
 #endif
 

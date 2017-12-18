@@ -159,7 +159,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\userSrc\sketch_pds\Daniel_Shiffman\Attractor.h" />
+    <ClInclude Include="src\userSrc\sketch_pds\Daniel_Shiffman\Attractor_bug.h" />
     <ClInclude Include="src\userSrc\sketch_pds\Daniel_Shiffman\Mover.h" />
+    <ClInclude Include="src\userSrc\sketch_pds\Daniel_Shiffman\Mover_bug.h" />
     <ClInclude Include="src\userSrc\sketch_pds\Daniel_Shiffman\Mover_rectangle.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
