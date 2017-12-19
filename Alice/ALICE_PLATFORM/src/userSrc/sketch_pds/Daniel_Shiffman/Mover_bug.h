@@ -15,6 +15,11 @@ public:
 	float mass;
 	float size;
 
+	float amplitude = 100;
+	float angle = 0.0;
+
+	float x;
+
 	Mover_bug() {
 		location = vec(ofRandom(-100.0, 100.0), ofRandom(-100.0, 100.0), 0);
 		velocity = vec(0, 0, 0);
@@ -31,7 +36,13 @@ public:
 	void update() {
 		velocity += acceleration;
 		location += velocity;
+		harmonic_coil(velocity);
 		acceleration *= 0;
+	}
+
+	void harmonic_coil(vec vel) {
+		x = amplitude * sin(angle);
+		angle += vel.mag() / 100;
 	}
 
 	void edges() {
@@ -58,6 +69,10 @@ public:
 		glPointSize(size);
 		glColor3f(1, 0, 0);
 		drawPoint(location);
+		drawCircle(location, 10, 100);
+
+		drawLine(location, vec(x, 0, 0));
+		drawCircle(vec(x, 0, 0), 10, 100);
 	}
 	//destructor
 	~Mover_bug() {};
